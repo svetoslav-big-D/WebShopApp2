@@ -14,7 +14,8 @@
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.18" />
 	</ItemGroup>
 	<ItemGroup>
-	  <Folder Include="Migrations\" />
+	  <ProjectReference Include="..\WebShopApp.Infrastructure\WebShopApp.Infrastructure.csproj" />
 	</ItemGroup>
-	
+
 </Project>
+
