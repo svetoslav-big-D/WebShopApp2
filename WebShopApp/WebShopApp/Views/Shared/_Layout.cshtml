@@ -28,6 +28,26 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Product" asp-action="Index">Products</a>
                         </li>
+                        <li class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                Products
+                            </button>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li>
+                                    <a class="dropdown-item" asp-controller="Product" asp-action="Index" asp-route-searchStringBrandName="Acer">ACER</a>
+                                    <a class="dropdown-item" asp-controller="Product" asp-action="Index" asp-route-searchStringBrandName="Asus">ASUS</a>
+                                    <a class="dropdown-item" asp-controller="Product" asp-action="Index" asp-route-searchStringBrandName="Apple">APPLE</a>
+                                    <a class="dropdown-item" asp-controller="Product" asp-action="Index" asp-route-searchStringBrandName="Dell">DELL</a>
+                                    <a class="dropdown-item" asp-controller="Product" asp-action="Index" asp-route-searchStringBrandName="Hp">HP</a>
+                                    <a class="dropdown-item" asp-controller="Product" asp-action="Index" asp-route-searchStringBrandName="Huawei">HUAWEI</a>
+                                    <a class="dropdown-item" asp-controller="Product" asp-action="Index" asp-route-searchStringBrandName="Lenovo">LENOVO</a>
+                                    <a class="dropdown-item" asp-controller="Product" asp-action="Index" asp-route-searchStringBrandName="Samsung">SAMSUNG</a>
+                                </li>
+                            </ul>
+                        </li>
+
                         @if (this.User.Identity.IsAuthenticated)
 						{
 							<li class="nav-item">
